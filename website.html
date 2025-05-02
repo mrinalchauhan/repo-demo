@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Simple Website</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      text-align: center;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+    }
+    main {
+      padding: 40px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    footer {
+      margin-top: 60px;
+      color: #888;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Simple Website</h1>
+  </header>
+  <main>
+    <p>This is a basic example of a website using HTML, CSS, and JavaScript.</p>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="output" style="margin-top:20px; color:#333;"></p>
+  </main>
+  <footer>
+    &copy; 2025 My Simple Site
+  </footer>
+  <script>
+    function showMessage() {
+      document.getElementById('output').textContent = "Thanks for clicking!";
+    }
+  </script>
+</body>
+</html>
